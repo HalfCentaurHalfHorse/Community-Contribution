@@ -162,7 +162,7 @@ a screenshot and upload the image to this website
 <https://imagecolorpicker.com/>, and we can retrieve the color Hex code
 and rgb code easily by just scrolling over the desired pixel.
 
-<img src="Pictures/color_picker.png" style="display: block; margin: auto;" />
+<img src="Pictures/color_picker.PNG"/>
 
 Thus it is easy to extract the colors we want. I picked two kinds of red
 from the picture above, `#f1beb6` and `#e48173`, and colored a histogram
