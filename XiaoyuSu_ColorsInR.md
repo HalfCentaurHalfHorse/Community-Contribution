@@ -68,7 +68,7 @@ ggplot(iris, aes(x=Species, y=Petal.Width)) +
   theme_bw()
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-3-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-3-2.png" width="50%" />
+<img src="Pictures/unnamed-chunk-3-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-3-2.png" width="50%" />
 
   - [Back to Top](#sections)
 
@@ -82,7 +82,7 @@ the palettes using this:
 display.brewer.all()
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
 Here is how we can use brewer’s palettes in ggplot2:
 
@@ -99,7 +99,7 @@ ggplot(iris,aes(x=reorder(Species, Sepal.Length, median),y=Sepal.Length)) +
   labs(x='Sepal.Length')
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-5-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-5-2.png" width="50%" />
+<img src="Pictures/unnamed-chunk-5-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-5-2.png" width="50%" />
 
 It is worthing noting that we can also extract the Hex code directly
 from `RColorBrewer` like this:
@@ -124,7 +124,7 @@ doubledecker(Improved ~ Treatment + Sex,
              gp = gpar(fill = brewer.pal(n=3, 'Blues') ))
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
 
   - [Back to Top](#sections)
 
@@ -150,7 +150,7 @@ ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
   theme_bw()
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-8-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-8-1.png" style="display: block; margin: auto;" />
 
   - [Back to Top](#sections)
 
@@ -176,7 +176,7 @@ ggplot(data=movies, aes(length)) +
      geom_histogram(aes(y=..density..),  fill="#f1beb6", col='#e48173', binwidth = 2)
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-9-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-9-1.png" style="display: block; margin: auto;" />
 
   - [Back to Top](#sections)
 
@@ -203,7 +203,7 @@ df <- data.frame(x=c('A','B','C','D','E','F','G'), count=c(2,10,14,16,20,15,8))
 ggplot(df, aes(x=x, y=count)) + geom_col(aes(fill=count)) + scale_fill_gradient(low='#141f33',high='#5f99f3')
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
 
 To make a continuous scale out of the
 <span style="color:red">RColorBrewer</span> package, we can use a
@@ -221,7 +221,7 @@ ggplot(df, aes(x=x, y=count)) +
   scale_fill_manual(values=continuous_palette(7))
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-11-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-11-1.png" style="display: block; margin: auto;" />
 
   - [Back to Top](#sections)
 
@@ -243,7 +243,7 @@ ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_tile() + scale_fill_continuous_sequential(palette = "Blues")
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-12-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-12-2.png" width="50%" />
+<img src="Pictures/unnamed-chunk-12-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-12-2.png" width="50%" />
 
 Here is another one.
 
@@ -263,7 +263,7 @@ ggplot(melt_mtcars, aes(variable, car)) +
     scale_fill_gradient(low = "white", high = "red")
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
 
   - [Back to Top](#sections)
 
@@ -293,7 +293,7 @@ ggplot(df, aes(x, y)) +
   scale_color_gradient2(low = 'blue', mid = 'white', high = 'red')
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
 
   - [Back to Top](#sections)
 
@@ -308,7 +308,7 @@ selection of `colorblindFriendly` choices.
 display.brewer.all(colorblindFriendly = TRUE)
 ```
 
-<img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
 
 The <span style="color:red">dichromat</span> package provides color
 schemes to suit the needs of color blind users. This is how the color
