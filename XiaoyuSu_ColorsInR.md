@@ -134,11 +134,7 @@ The <span style="color:red">viridis</span> package has continuous
 scales, but we can use it discretely as well.
 
 <p align="center">
-
-
-<img src="Pictures/Palette_viridis.png"/>
-
-
+<img src="Pictures/Palette_viridis.png" style="display: block; margin: auto;" />
 </p>
 
 We can pass in the `discrete=TRUE` argument to make it work. In
