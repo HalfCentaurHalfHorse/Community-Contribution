@@ -147,7 +147,7 @@ ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
   theme_bw()
 ```
 
-<img src="Pictures/unnamed-chunk-8-1.png" style="display: block; margin: auto;"  width='80%'/>
+<img src="Pictures/unnamed-chunk-8-1.png" style="display: block; margin: auto;"  width='60%'/>
 
   - [Back to Top](#sections)
 
