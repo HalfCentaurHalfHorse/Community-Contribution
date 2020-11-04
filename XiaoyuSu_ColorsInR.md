@@ -311,7 +311,7 @@ schemes to suit the needs of color blind users. This is how the color
 palettes look like:
 
 <p align="center">
-<img src="Pictures/dichromat.PNG" width='80%' style="display: block; margin: auto;" />
+<img src="Pictures/dichromat.PNG" width='70%' style="display: block; margin: auto;" />
 </p>
 
 Here is how you can extract the colors from the package:
