@@ -68,7 +68,7 @@ ggplot(iris, aes(x=Species, y=Petal.Width)) +
   theme_bw()
 ```
 
-<img src="Pictures/unnamed-chunk-3-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-3-2.png" width="50%" />
+<img src="Pictures/unnamed-chunk-3-1.png" width="50%" /><img src="Pictures/unnamed-chunk-3-2.png" width="50%" />
 
   - [Back to Top](#sections)
 
@@ -99,7 +99,7 @@ ggplot(iris,aes(x=reorder(Species, Sepal.Length, median),y=Sepal.Length)) +
   labs(x='Sepal.Length')
 ```
 
-<img src="Pictures/unnamed-chunk-5-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-5-2.png" width="50%" />
+<img src="Pictures/unnamed-chunk-5-1.png" width="50%" /><img src="Pictures/unnamed-chunk-5-2.png" width="50%" />
 
 It is worthing noting that we can also extract the Hex code directly
 from `RColorBrewer` like this:
@@ -162,8 +162,7 @@ a screenshot and upload the image to this website
 <https://imagecolorpicker.com/>, and we can retrieve the color Hex code
 and rgb code easily by just scrolling over the desired pixel.
 
-![image Soruce:
-<https://imagecolorpicker.com/>](C:\\Users\\mil_kry\\Desktop\\color_picker.PNG)
+<img src="Pictures/color_picker.png" style="display: block; margin: auto;" />
 
 Thus it is easy to extract the colors we want. I picked two kinds of red
 from the picture above, `#f1beb6` and `#e48173`, and colored a histogram
@@ -243,7 +242,7 @@ ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_tile() + scale_fill_continuous_sequential(palette = "Blues")
 ```
 
-<img src="Pictures/unnamed-chunk-12-1.png" width="50%" /><img src="XiaoyuSu_ColorsInR_files/figure-gfm/unnamed-chunk-12-2.png" width="50%" />
+<img src="Pictures/unnamed-chunk-12-1.png" width="50%" /><img src="Pictures/unnamed-chunk-12-2.png" width="50%" />
 
 Here is another one.
 
