@@ -135,8 +135,9 @@ scales, but we can use it discretely as well.
 
 <p align="center">
 
-![image Soruce:
-<https://cran.r-project.org/web/packages/viridis/>](C:\\Users\\mil_kry\\Desktop\\Palette_viridis.png)
+
+<img src="Pictures/Palette_viridis.png"/>
+
 
 </p>
 
