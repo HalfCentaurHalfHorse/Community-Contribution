@@ -47,7 +47,7 @@ barplot(rep(1, 5), axes = FALSE, space = 0.1, border = 'white',
                 rgb(31, 0, 127, maxColorValue=255)))
 ```
 
-<img src="Pictures/unnamed-chunk-2-1.png" style="display: block; margin: auto;" width='100%' />
+<img src="Pictures/unnamed-chunk-2-1.png" style="display: block; margin: auto;" width='80%' />
 
 R differentiates between `color` and `fill`. Basically, you **color**
 the dots and lines but you **fill** in an area. In ggplot2, the syntax
@@ -82,7 +82,7 @@ the palettes using this:
 display.brewer.all()
 ```
 
-<img src="Pictures/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-4-1.png" style="display: block; margin: auto;" width='80%'/>
 
 Here is how we can use brewer’s palettes in ggplot2:
 
@@ -124,7 +124,7 @@ doubledecker(Improved ~ Treatment + Sex,
              gp = gpar(fill = brewer.pal(n=3, 'Blues') ))
 ```
 
-<img src="Pictures/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-7-1.png" style="display: block; margin: auto;" width='80%' />
 
   - [Back to Top](#sections)
 
@@ -147,7 +147,7 @@ ggplot(iris, aes(x=Petal.Length, y=Petal.Width)) +
   theme_bw()
 ```
 
-<img src="Pictures/unnamed-chunk-8-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-8-1.png" style="display: block; margin: auto;"  width='80%'/>
 
   - [Back to Top](#sections)
 
@@ -172,7 +172,7 @@ ggplot(data=movies, aes(length)) +
      geom_histogram(aes(y=..density..),  fill="#f1beb6", col='#e48173', binwidth = 2)
 ```
 
-<img src="Pictures/unnamed-chunk-9-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-9-1.png" style="display: block; margin: auto;" width='80%' />
 
   - [Back to Top](#sections)
 
@@ -199,7 +199,7 @@ df <- data.frame(x=c('A','B','C','D','E','F','G'), count=c(2,10,14,16,20,15,8))
 ggplot(df, aes(x=x, y=count)) + geom_col(aes(fill=count)) + scale_fill_gradient(low='#141f33',high='#5f99f3')
 ```
 
-<img src="Pictures/unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-10-1.png" style="display: block; margin: auto;" width='80%' />
 
 To make a continuous scale out of the
 <span style="color:red">RColorBrewer</span> package, we can use a
@@ -217,7 +217,7 @@ ggplot(df, aes(x=x, y=count)) +
   scale_fill_manual(values=continuous_palette(7))
 ```
 
-<img src="Pictures/unnamed-chunk-11-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-11-1.png" style="display: block; margin: auto;" width='80%' />
 
   - [Back to Top](#sections)
 
@@ -259,7 +259,7 @@ ggplot(melt_mtcars, aes(variable, car)) +
     scale_fill_gradient(low = "white", high = "red")
 ```
 
-<img src="Pictures/unnamed-chunk-13-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-13-1.png" style="display: block; margin: auto;" width='80%'/>
 
   - [Back to Top](#sections)
 
@@ -289,7 +289,7 @@ ggplot(df, aes(x, y)) +
   scale_color_gradient2(low = 'blue', mid = 'white', high = 'red')
 ```
 
-<img src="Pictures/unnamed-chunk-14-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-14-1.png" style="display: block; margin: auto;" width='80%'/>
 
   - [Back to Top](#sections)
 
@@ -304,7 +304,7 @@ selection of `colorblindFriendly` choices.
 display.brewer.all(colorblindFriendly = TRUE)
 ```
 
-<img src="Pictures/unnamed-chunk-15-1.png" style="display: block; margin: auto;" />
+<img src="Pictures/unnamed-chunk-15-1.png" style="display: block; margin: auto;" width='80%'/>
 
 The <span style="color:red">dichromat</span> package provides color
 schemes to suit the needs of color blind users. This is how the color
