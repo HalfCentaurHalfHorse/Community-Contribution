@@ -134,7 +134,7 @@ The <span style="color:red">viridis</span> package has continuous
 scales, but we can use it discretely as well.
 
 <p align="center">
-<img src="Pictures/Palette_viridis.png" width="50%"/>
+<img src="Pictures/Palette_viridis.png" width="60%"/>
 </p>
 
 We can pass in the `discrete=TRUE` argument to make it work. In
@@ -159,7 +159,7 @@ a screenshot and upload the image to this website
 <https://imagecolorpicker.com/>, and we can retrieve the color Hex code
 and rgb code easily by just scrolling over the desired pixel.
 
-<img src="Pictures/color_picker.PNG"/>
+<img src="Pictures/color_picker.PNG" width="80%"/>
 
 Thus it is easy to extract the colors we want. I picked two kinds of red
 from the picture above, `#f1beb6` and `#e48173`, and colored a histogram
@@ -311,10 +311,7 @@ schemes to suit the needs of color blind users. This is how the color
 palettes look like:
 
 <p align="center">
-
-![image Soruce:
-<https://stat545.com/colors.html>](C:\\Users\\mil_kry\\Desktop\\dichromat.PNG)
-
+<img src="Pictures/dichromat.PNG" width='80%' style="display: block; margin: auto;" />
 </p>
 
 Here is how you can extract the colors from the package:
