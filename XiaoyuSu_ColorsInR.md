@@ -47,7 +47,7 @@ barplot(rep(1, 5), axes = FALSE, space = 0.1, border = 'white',
                 rgb(31, 0, 127, maxColorValue=255)))
 ```
 
-<img src="Pictures/unnamed-chunk-2-1.png" style="display: block; margin: auto;" width='80%' />
+<img src="Pictures/unnamed-chunk-2-1.png" style="display: block; margin: auto;/>
 
 R differentiates between `color` and `fill`. Basically, you **color**
 the dots and lines but you **fill** in an area. In ggplot2, the syntax
